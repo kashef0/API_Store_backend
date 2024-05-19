@@ -17,15 +17,20 @@ const bokningSchema = new Schema({                       // Definierar ett schem
     },
     phone: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     Antal_people: {
         type: Number,
         required: true
+    },
+    message: {
+        type: String,
     }
 });
 
