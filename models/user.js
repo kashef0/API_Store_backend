@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-
-const userSchema = new mongoose.Schema({
+const Schema = mongoose.Schema;
+const userSchema = new Schema({                               // Definierar ett schema för user
     username: {
         type: String,
         required: true,

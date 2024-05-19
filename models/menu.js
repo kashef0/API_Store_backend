@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-
-const menuSchem = new mongoose.Schema({
+const Schema = mongoose.Schema;
+const menuSchem = new Schema({              // Definierar ett schema för menu
     title: {
         type: String,
         required: true,

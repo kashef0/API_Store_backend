@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-
-const bokningSchema = new mongoose.Schema({
+const Schema = mongoose.Schema;
+const bokningSchema = new Schema({                       // Definierar ett schema för bokningar
     name: {
         type: String,
         required: true,
@@ -17,7 +17,7 @@ const bokningSchema = new mongoose.Schema({
     },
     phone: {
         type: String,
-        required: trusted
+        required: true
     },
     email: {
         type: String,
