@@ -4,7 +4,7 @@ const auth = require("../auth/autentisering");
 
 
 
-router.get("/api/protected", auth, (req, res) => {
+router.get("/", auth, (req, res) => {
     res.json({message: "shyddad route! "});
 });
 
