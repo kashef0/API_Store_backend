@@ -31,6 +31,9 @@ const bokningSchema = new Schema({                       // Definierar ett schem
     },
     message: {
         type: String,
+    },
+    takeOut: {
+        type: String
     }
 });
 

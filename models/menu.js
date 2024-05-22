@@ -19,9 +19,6 @@ const menuSchem = new Schema({              // Definierar ett schema för menu
     price: {
         type: Number,
         required: true
-    },
-    takeOut: {
-        type: String,
     }
 
 });
