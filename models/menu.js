@@ -4,6 +4,7 @@ const menuSchem = new Schema({              // Definierar ett schema för menu
     title: {
         type: String,
         required: true,
+        unique: true,
         trim: true
     },
     descrip: {
@@ -18,6 +19,9 @@ const menuSchem = new Schema({              // Definierar ett schema för menu
     price: {
         type: Number,
         required: true
+    },
+    takeOut: {
+        type: String,
     }
 
 });
