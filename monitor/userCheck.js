@@ -37,3 +37,14 @@ exports.login = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
+
+
+exports.getAllUsers = async (req, res) => {
+    try {
+        const users = await User.find({}, 'username email');
+        res.json(users);
+    } catch (error) {
+        console.error("error vid fetching" + error);
+        res.status(500).json({error: "error fetching users" + error});
+    }
+};
