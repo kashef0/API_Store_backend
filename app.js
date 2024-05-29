@@ -8,6 +8,7 @@ const menuRoute = require("./routes/menuRoutes");
 const bokningRoute = require("./routes/bookingRoute");
 const userRoute = require("./routes/userRoute");
 const protected = require("./routes/protected");
+const feedback = require("./routes/reviewRoute")
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 // routes
+app.use("/api/review", feedback);
 app.use("/api/menu", menuRoute);
 app.use("/api/bookings", bokningRoute);
 app.use("/api/users", userRoute);
